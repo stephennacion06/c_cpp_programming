@@ -5,15 +5,15 @@ Core C/C++ programming concepts organized by difficulty level.
 ## 📚 Topics Covered
 
 ### Beginner Level
-- [ ] **Hello World**: First program, compilation basics
-- [ ] **Variables & Data Types**: int, float, char, sizeof
-- [ ] **Operators**: Arithmetic, relational, logical, bitwise
-- [ ] **Input/Output**: printf/scanf (C), cin/cout (C++)
-- [ ] **Control Flow**: if-else, switch statements
-- [ ] **Loops**: for, while, do-while
-- [ ] **Functions**: Declaration, definition, parameters, return values
-- [ ] **Arrays**: Declaration, initialization, accessing elements
-- [ ] **Strings**: Character arrays (C), std::string (C++)
+- [x] **Hello World**: First program, compilation basics - [Documentation](beginner/hello-world.md) | [Code](beginner/hello_world.c)
+- [x] **Variables & Data Types**: int, float, char, sizeof - [Documentation](beginner/variables-and-data-types.md) | [Code](beginner/variables_and_data_types.c)
+- [x] **Operators**: Arithmetic, relational, logical, bitwise - [Documentation](beginner/operators.md) | [Code](beginner/operators.c)
+- [x] **Input/Output**: printf/scanf (C), cin/cout (C++) - [Documentation](beginner/input-output.md) | [Code](beginner/input_output.c)
+- [x] **Control Flow**: if-else, switch statements - [Documentation](beginner/control-flow.md) | [Code](beginner/control_flow.c)
+- [x] **Loops**: for, while, do-while - [Documentation](beginner/loops.md) | [Code](beginner/loops.c)
+- [x] **Functions**: Declaration, definition, parameters, return values - [Documentation](beginner/functions.md) | [Code](beginner/functions.c)
+- [x] **Arrays**: Declaration, initialization, accessing elements - [Documentation](beginner/arrays.md) | [Code](beginner/arrays.c)
+- [x] **Strings**: Character arrays (C), std::string (C++) - [Documentation](beginner/strings.md) | [Code](beginner/strings.c)
 
 ### Intermediate Level
 - [ ] **Pointers Basics**: Address-of, dereference operators

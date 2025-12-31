@@ -24,18 +24,20 @@ This document tracks the current state of the repository and planned additions.
 ### Examples
 - [x] Hello World example (C)
 - [x] CMake configuration for examples
+- [x] Variables and data types
+- [x] Operators (arithmetic, logical, relational, bitwise)
+- [x] Input/output (printf/scanf)
+- [x] Control flow (if-else, switch)
+- [x] Loops (for, while, do-while)
+- [x] Functions (parameters, return values, recursion)
+- [x] Arrays (1D and 2D)
 
 ## 🚧 In Progress
 
-### Fundamentals - Beginner
-- [ ] Variables and data types
-- [ ] Operators
-- [ ] Input/output (printf/scanf)
-- [ ] Control flow (if-else, switch)
-- [ ] Loops (for, while, do-while)
-- [ ] Functions
-- [ ] Arrays
-- [ ] Strings
+### Data Structures - Beginner
+- [ ] Arrays operations
+- [ ] Basic sorting (bubble, selection)
+- [ ] Linear search
 
 ### Fundamentals - Intermediate
 - [ ] Pointers basics
@@ -44,15 +46,8 @@ This document tracks the current state of the repository and planned additions.
 - [ ] Header files
 - [ ] Multi-file programs
 
-### Data Structures - Beginner
-- [ ] Arrays operations
-- [ ] Basic sorting (bubble, selection)
-- [ ] Linear search
-
-### Resources
-- [ ] Individual cheatsheets (C basics, pointers, etc.)
-- [ ] Detailed GDB guide
-- [ ] Platform-specific setup guides
+### Exercises
+- [ ] Complete beginner exercises with solutions
 
 ## 📋 Planned
 
