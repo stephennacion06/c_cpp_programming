@@ -32,12 +32,12 @@ This document tracks the current state of the repository and planned additions.
 - [x] Functions (parameters, return values, recursion)
 - [x] Arrays (1D and 2D)
 
-## 🚧 In Progress
-
 ### Data Structures - Beginner
-- [ ] Arrays operations
-- [ ] Basic sorting (bubble, selection)
-- [ ] Linear search
+- [x] Arrays operations (insert, delete, search, reverse, rotate)
+- [x] Basic sorting (bubble, selection, insertion)
+- [x] Searching algorithms (linear, binary)
+
+## 🚧 In Progress
 
 ### Fundamentals - Intermediate
 - [ ] Pointers basics
@@ -59,10 +59,10 @@ This document tracks the current state of the repository and planned additions.
 - [ ] Create comprehensive exercises for each topic
 
 #### Data Structures
-- [ ] Linked list implementation
-- [ ] Stack implementation
-- [ ] Queue implementation
-- [ ] Basic tree structures
+- [ ] Linked list implementation (singly and doubly)
+- [ ] Stack implementation (array and linked list based)
+- [ ] Queue implementation (linear and circular)
+- [ ] Basic tree structures (binary tree, BST)
 
 #### Projects
 - [ ] Simple calculator
@@ -123,9 +123,12 @@ This document tracks the current state of the repository and planned additions.
 
 ### Current State
 - **Topics**: 7 major sections
-- **Examples**: 1 complete example
-- **Documentation Files**: 15+ README files
-- **Total Lines of Documentation**: ~2000+
+- **Examples**: 12 complete examples
+  - Fundamentals (beginner): 9 examples
+  - Data Structures (beginner): 3 examples
+- **Documentation Files**: 20+ README files
+- **Total Lines of Documentation**: ~3000+
+- **Total Lines of Code**: ~1500+
 
 ### Goals for v1.0
 - **Examples**: 50+ compilable examples
@@ -162,7 +165,16 @@ This roadmap is reviewed and updated:
 
 ## 📝 Version History
 
-### v0.1.0 (Current) - 2025-12-30
+### v0.2.0 (Current) - 2026-01-02
+- Added Data Structures - Beginner section
+  - Array operations (insert, delete, search, reverse, rotate, merge)
+  - Sorting algorithms (bubble, selection, insertion)
+  - Searching algorithms (linear, binary - iterative and recursive)
+- Complete beginner fundamentals (9 examples)
+- Enhanced documentation with complexity analysis
+- CMake build system updates
+
+### v0.1.0 - 2025-12-30
 - Initial repository setup
 - Complete documentation framework
 - First example (Hello World)

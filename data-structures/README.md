@@ -5,12 +5,9 @@ Implementation of fundamental and advanced data structures in C/C++.
 ## 📚 Topics Covered
 
 ### Beginner Level
-- [ ] **Arrays**: Static arrays, multi-dimensional arrays
-- [ ] **Strings**: String manipulation, string functions
-- [ ] **Structures**: Creating custom data types
-- [ ] **Array of Structures**: Managing collections
-- [ ] **Basic Sorting**: Bubble sort, selection sort
-- [ ] **Linear Search**: Sequential search algorithm
+- [x] **Arrays**: Array operations (insert, delete, search, reverse, rotate) - [Code](beginner/array_operations.c)
+- [x] **Basic Sorting**: Bubble, selection, insertion sort - [Code](beginner/sorting.c)
+- [x] **Searching**: Linear and binary search - [Code](beginner/searching.c)
 
 ### Intermediate Level
 - [ ] **Linked Lists**: Singly linked list implementation
