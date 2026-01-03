@@ -37,17 +37,33 @@ This document tracks the current state of the repository and planned additions.
 - [x] Basic sorting (bubble, selection, insertion)
 - [x] Searching algorithms (linear, binary)
 
+### Fundamentals - Intermediate
+- [x] Pointers basics
+- [x] Structures (struct, typedef, nested structures)
+- [x] Preprocessor directives (#define, #ifdef, macros)
+- [x] Header files (include guards, multi-file programs)
+
+### Exercises - Beginner
+- [x] Calculator (arithmetic operations)
+- [x] Temperature converter
+- [x] Prime number checker
+- [x] Factorial calculator
+- [x] Fibonacci sequence
+- [x] Array max/min finder
+- [x] Array reversal
+- [x] Vowel counter
+- [x] Sum of digits
+- [x] Multiplication table
+
 ## 🚧 In Progress
 
 ### Fundamentals - Intermediate
-- [ ] Pointers basics
-- [ ] Structures
-- [ ] Preprocessor directives
-- [ ] Header files
-- [ ] Multi-file programs
+- [ ] Dynamic memory allocation
+- [ ] File I/O operations
 
 ### Exercises
-- [ ] Complete beginner exercises with solutions
+- [x] Complete beginner exercises with solutions (10 exercises)
+- [ ] Add intermediate exercises
 
 ## 📋 Planned
 
@@ -70,7 +86,7 @@ This document tracks the current state of the repository and planned additions.
 - [ ] To-do list application
 
 #### Exercises
-- [ ] 20 beginner exercises with solutions
+- [x] 10 beginner exercises with solutions
 - [ ] 10 intermediate exercises with solutions
 
 ### Medium Term (Next 1-2 months)
@@ -123,12 +139,14 @@ This document tracks the current state of the repository and planned additions.
 
 ### Current State
 - **Topics**: 7 major sections
-- **Examples**: 12 complete examples
+- **Examples**: 26 complete examples
   - Fundamentals (beginner): 9 examples
+  - Fundamentals (intermediate): 4 examples
   - Data Structures (beginner): 3 examples
+  - Exercises (beginner): 10 exercises
 - **Documentation Files**: 20+ README files
 - **Total Lines of Documentation**: ~3000+
-- **Total Lines of Code**: ~1500+
+- **Total Lines of Code**: ~4500+
 
 ### Goals for v1.0
 - **Examples**: 50+ compilable examples
@@ -163,12 +181,26 @@ This roadmap is reviewed and updated:
 - **Monthly**: Re-prioritization and planning
 - **Quarterly**: Major milestones and direction
 
-## 📝 Version History
+## 📝 V3.0 (Current) - 2026-01-03
+- Added Fundamentals - Intermediate section
+  - Pointers (basics, arithmetic, double pointers, function pointers)
+  - Structures (definition, initialization, nested structures, typedef)
+  - Preprocessor directives (#define, macros, conditional compilation)
+  - Header files (include guards, multi-file programs)
+- Added 10 Beginner Exercises with solutions
+  - Calculator, Temperature Converter, Prime Checker
+  - Factorial, Fibonacci, Array Operations
+  - String Processing, Digit Operations
+- Fixed UTF-8 character encoding for Windows console
+- Fixed VLA issues for MSVC compatibility
+- Enhanced build system with CMake for new modules
+
+### v0.2.0y
 
 ### v0.2.0 (Current) - 2026-01-02
 - Added Data Structures - Beginner section
   - Array operations (insert, delete, search, reverse, rotate, merge)
-  - Sorting algorithms (bubble, selection, insertion)
+  - Sorting alJanuary 3, 2026 selection, insertion)
   - Searching algorithms (linear, binary - iterative and recursive)
 - Complete beginner fundamentals (9 examples)
 - Enhanced documentation with complexity analysis
