@@ -18,6 +18,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #define MAX_SIZE 100
 
 // Function declarations
@@ -33,6 +37,12 @@ int find_min(int arr[], int size);
 void merge_arrays(int arr1[], int size1, int arr2[], int size2, int result[]);
 
 int main(void) {
+#ifdef _WIN32
+    // Enable UTF-8 output on Windows console
+    SetConsoleOutputCP(CP_UTF8);
+    setvbuf(stdout, NULL, _IOFBF, 1000);
+#endif
+
     printf("========================================\n");
     printf("     ARRAY OPERATIONS DEMONSTRATION     \n");
     printf("========================================\n\n");
@@ -219,8 +229,21 @@ int linear_search(int arr[], int size, int target) {
     return -1; // Not found
 }
 
-/**
- * Reverse array in-place
+/** * Helper function to reverse a subarray from start to end indices
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
+static void reverse_subarray(int arr[], int start, int end) {
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+/** * Reverse array in-place
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */
@@ -251,8 +274,16 @@ void rotate_left(int arr[], int size, int positions) {
     positions = positions % size;
     if (positions == 0) return;
     
-    // Store first 'positions' elements
-    int temp[positions];
+    // Store first 'positions' elements (use static buffer for MSVC compatibility)
+    #define MAX_ROTATE_BUFFER 256
+    int temp[MAX_ROTATE_BUFFER];
+    if (positions > MAX_ROTATE_BUFFER) {
+        // For larger rotations, use reversal algorithm instead
+        reverse_subarray(arr, 0, positions - 1);
+        reverse_subarray(arr, positions, size - 1);
+        reverse_subarray(arr, 0, size - 1);
+        return;
+    }
     for (int i = 0; i < positions; i++) {
         temp[i] = arr[i];
     }
@@ -280,8 +311,15 @@ void rotate_right(int arr[], int size, int positions) {
     positions = positions % size;
     if (positions == 0) return;
     
-    // Store last 'positions' elements
-    int temp[positions];
+    // Store last 'positions' elements (use static buffer for MSVC compatibility)
+    int temp[MAX_ROTATE_BUFFER];
+    if (positions > MAX_ROTATE_BUFFER) {
+        // For larger rotations, use reversal algorithm instead
+        reverse_subarray(arr, 0, size - 1);
+        reverse_subarray(arr, 0, positions - 1);
+        reverse_subarray(arr, positions, size - 1);
+        return;
+    }
     for (int i = 0; i < positions; i++) {
         temp[i] = arr[size - positions + i];
     }

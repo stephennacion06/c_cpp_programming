@@ -14,6 +14,10 @@
 #include <string.h>
 #include <stdbool.h>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #define ARRAY_SIZE 10
 
 // Function declarations
@@ -25,6 +29,12 @@ void insertion_sort(int arr[], int size);
 bool is_sorted(int arr[], int size);
 
 int main(void) {
+#ifdef _WIN32
+    // Enable UTF-8 output on Windows console
+    SetConsoleOutputCP(CP_UTF8);
+    setvbuf(stdout, NULL, _IOFBF, 1000);
+#endif
+
     printf("========================================\n");
     printf("    BASIC SORTING ALGORITHMS DEMO      \n");
     printf("========================================\n\n");

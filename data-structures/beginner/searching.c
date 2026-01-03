@@ -12,6 +12,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #define ARRAY_SIZE 15
 
 // Function declarations
@@ -22,6 +26,12 @@ int binary_search_recursive(int arr[], int left, int right, int target);
 void print_search_result(const char* algorithm, int result, int target);
 
 int main(void) {
+#ifdef _WIN32
+    // Enable UTF-8 output on Windows console
+    SetConsoleOutputCP(CP_UTF8);
+    setvbuf(stdout, NULL, _IOFBF, 1000);
+#endif
+
     printf("========================================\n");
     printf("      SEARCHING ALGORITHMS DEMO        \n");
     printf("========================================\n\n");
