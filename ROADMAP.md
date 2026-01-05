@@ -42,6 +42,8 @@ This document tracks the current state of the repository and planned additions.
 - [x] Structures (struct, typedef, nested structures)
 - [x] Preprocessor directives (#define, #ifdef, macros)
 - [x] Header files (include guards, multi-file programs)
+- [x] Dynamic memory allocation (malloc, calloc, realloc, free)
+- [x] File I/O operations (fopen, fclose, fread, fwrite)
 
 ### Exercises - Beginner
 - [x] Calculator (arithmetic operations)
@@ -55,15 +57,14 @@ This document tracks the current state of the repository and planned additions.
 - [x] Sum of digits
 - [x] Multiplication table
 
+### Exercises - Intermediate
+- [x] Dynamic array implementation
+- [x] Linked list implementation
+- [x] File copy utility
+
 ## 🚧 In Progress
 
-### Fundamentals - Intermediate
-- [ ] Dynamic memory allocation
-- [ ] File I/O operations
-
-### Exercises
-- [x] Complete beginner exercises with solutions (10 exercises)
-- [ ] Add intermediate exercises
+None currently - all in-progress items completed!
 
 ## 📋 Planned
 
@@ -87,7 +88,8 @@ This document tracks the current state of the repository and planned additions.
 
 #### Exercises
 - [x] 10 beginner exercises with solutions
-- [ ] 10 intermediate exercises with solutions
+- [x] Initial intermediate exercises (3 completed)
+- [ ] Complete 10 intermediate exercises total
 
 ### Medium Term (Next 1-2 months)
 
@@ -139,14 +141,15 @@ This document tracks the current state of the repository and planned additions.
 
 ### Current State
 - **Topics**: 7 major sections
-- **Examples**: 26 complete examples
+- **Examples**: 31 complete examples
   - Fundamentals (beginner): 9 examples
-  - Fundamentals (intermediate): 4 examples
+  - Fundamentals (intermediate): 6 examples
   - Data Structures (beginner): 3 examples
   - Exercises (beginner): 10 exercises
-- **Documentation Files**: 20+ README files
-- **Total Lines of Documentation**: ~3000+
-- **Total Lines of Code**: ~4500+
+  - Exercises (intermediate): 3 exercises
+- **Documentation Files**: 22+ README files
+- **Total Lines of Documentation**: ~4000+
+- **Total Lines of Code**: ~6500+
 
 ### Goals for v1.0
 - **Examples**: 50+ compilable examples
@@ -181,7 +184,22 @@ This roadmap is reviewed and updated:
 - **Monthly**: Re-prioritization and planning
 - **Quarterly**: Major milestones and direction
 
-## 📝 V3.0 (Current) - 2026-01-03
+## 📝 Version History
+
+### v0.4.0 (Current) - 2026-01-05
+- Completed Fundamentals - Intermediate section
+  - Dynamic memory allocation (malloc, calloc, realloc, free)
+  - File I/O operations (fopen, fclose, fread, fwrite, fprintf, fscanf)
+  - Comprehensive error handling patterns
+  - Memory management best practices
+- Added Exercises - Intermediate section
+  - Dynamic array with resize capability
+  - Singly linked list implementation
+  - File copy utility with progress
+- Enhanced build system for new modules
+- Updated documentation with memory and CPU overhead analysis
+
+### v0.3.0 - 2026-01-03
 - Added Fundamentals - Intermediate section
   - Pointers (basics, arithmetic, double pointers, function pointers)
   - Structures (definition, initialization, nested structures, typedef)
@@ -195,9 +213,7 @@ This roadmap is reviewed and updated:
 - Fixed VLA issues for MSVC compatibility
 - Enhanced build system with CMake for new modules
 
-### v0.2.0y
-
-### v0.2.0 (Current) - 2026-01-02
+### v0.2.0 - 2026-01-02
 - Added Data Structures - Beginner section
   - Array operations (insert, delete, search, reverse, rotate, merge)
   - Sorting alJanuary 3, 2026 selection, insertion)
@@ -214,4 +230,4 @@ This roadmap is reviewed and updated:
 
 ---
 
-Last updated: December 30, 2025
+Last updated: January 5, 2026

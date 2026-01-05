@@ -4,6 +4,8 @@
 add_executable(pointers pointers.c)
 add_executable(structures structures.c)
 add_executable(preprocessor preprocessor.c)
+add_executable(dynamic_memory dynamic_memory.c)
+add_executable(file_io file_io.c)
 
 # Header example (multi-file program)
 add_executable(header_example 
@@ -12,7 +14,7 @@ add_executable(header_example
 )
 
 # Set output directory
-set_target_properties(pointers structures preprocessor header_example
+set_target_properties(pointers structures preprocessor dynamic_memory file_io header_example
     PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/fundamentals/intermediate/$<CONFIG>"
 )
