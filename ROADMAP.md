@@ -1,6 +1,6 @@
 # Project Status and Roadmap
 
-This document tracks the current state of the repository and planned additions.
+This document tracks the current state of the C/C++ Knowledge Repository - an industry-grade resource for embedded systems and modern C/C++ programming.
 
 ## ✅ Completed
 
@@ -10,6 +10,7 @@ This document tracks the current state of the repository and planned additions.
 - [x] Git repository with .gitignore
 - [x] Documentation framework (README, CONTRIBUTING, LICENSE)
 - [x] Getting Started guide
+- [x] Build integration for embedded-systems and memory-management modules
 
 ### Documentation
 - [x] Main README with overview
@@ -20,6 +21,7 @@ This document tracks the current state of the repository and planned additions.
 - [x] Tooling setup guide
 - [x] Common pitfalls documentation
 - [x] External resources compilation
+- [x] **Deep Dive: Memory Layout Explained** (stack, heap, .text, .data, .bss)
 
 ### Examples
 - [x] Hello World example (C)
@@ -44,6 +46,7 @@ This document tracks the current state of the repository and planned additions.
 - [x] Header files (include guards, multi-file programs)
 - [x] Dynamic memory allocation (malloc, calloc, realloc, free)
 - [x] File I/O operations (fopen, fclose, fread, fwrite)
+- [x] Storage classes (auto, static, extern, register)
 
 ### Exercises - Beginner
 - [x] Calculator (arithmetic operations)
@@ -61,6 +64,14 @@ This document tracks the current state of the repository and planned additions.
 - [x] Dynamic array implementation
 - [x] Linked list implementation
 - [x] File copy utility
+
+### Embedded Systems - Beginner
+- [x] volatile keyword (hardware register access, compiler optimization)
+- [x] Memory-mapped I/O (GPIO control, peripheral registers)
+- [x] Bit manipulation (set, clear, toggle, multi-bit fields)
+
+### Memory Management - Beginner
+- [x] Stack vs heap (performance comparison, lifetime, fragmentation)
 
 ## 🚧 In Progress
 
@@ -140,30 +151,34 @@ None currently - all in-progress items completed!
 ## 📊 Content Statistics
 
 ### Current State
-- **Topics**: 7 major sections
-- **Examples**: 31 complete examples
+- **Topics**: 9 major sections
+- **Examples**: 38 complete examples
   - Fundamentals (beginner): 9 examples
-  - Fundamentals (intermediate): 6 examples
+  - Fundamentals (intermediate): 7 examples
   - Data Structures (beginner): 3 examples
+  - Embedded Systems (beginner): 3 examples
+  - Memory Management (beginner): 1 example
   - Exercises (beginner): 10 exercises
   - Exercises (intermediate): 3 exercises
-- **Documentation Files**: 22+ README files
-- **Total Lines of Documentation**: ~4000+
-- **Total Lines of Code**: ~6500+
+- **Documentation Files**: 25+ README files
+- **Deep Dives**: 1 comprehensive guide (Memory Layout)
+- **Total Lines of Documentation**: ~8000+
+- **Total Lines of Code**: ~10,000+
 
 ### Goals for v1.0
-- **Examples**: 50+ compilable examples
-- **Exercises**: 100+ practice problems
-- **Projects**: 15+ complete projects
+- **Examples**: 75+ compilable examples (38/75 complete - 51%)
+- **Deep Dives**: 8+ comprehensive guides (1/8 complete - 13%)
+- **Exercises**: 100+ practice problems (13/100 complete - 13%)
+- **Projects**: 15+ complete projects (0/15 complete - 0%)
 - **Documentation**: Comprehensive coverage of all topics
 
 ## 🎯 Priority Areas
 
-1. **Fundamentals - Beginner**: Foundation for all learners
-2. **Exercises**: Hands-on practice is crucial
-3. **Data Structures**: Core computer science concepts
-4. **Projects**: Real-world application
-5. **Resources**: Supporting materials
+1. **Embedded Systems**: Hardware interaction, real-time patterns
+2. **Memory Management**: Critical for embedded and performance
+3. **Fundamentals - Intermediate**: Build on strong foundation
+4. **Data Structures**: Core algorithms and patterns
+5. **Projects**: Real-world application examples
 
 ## 🤝 How to Contribute
 
